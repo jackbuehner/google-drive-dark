@@ -3,7 +3,7 @@
 @description  This style adds a dark theme to the Google Drive webpage. It also makes slight modifications to the appearance of certain elements, including restoring the blue new button and adding mouse over effects for items. THIS STYLE REQUIRES THE NEW GOOGLE DRIVE
 @namespace    eight04.blogspot
 @version      0.1.8
-@author       Jack Buehner
+@author       Jack Buehner & Nathan Eads
 @homepageURL  https://github.com/jackbuehner/google-drive-dark
 @updateURL    https://raw.githubusercontent.com/jackbuehner/google-drive-dark/master/drive-dark.user.css
 @supportURL   https://github.com/jackbuehner/google-drive-dark/issues
@@ -324,4 +324,85 @@
 .a-nEbBXb .g-Qa:not(.H-qa-ng-Vi) {
     border-color: rgba(255, 255, 255, 0.8);
 }
+}
+
+@-moz-document url-prefix("https://drive.google.com/drive") {
+:root {
+    --border-radius: 2px;
+    --border-radius-none: 0px;
+    --border-radius-label: 1px;
+    --primary-background-color: #111;
+    --window-background-color: #212121;
+    --secondary-background-color: #212121;
+    --secondary-background-color-b: #242424;
+    --tertiary-background-color: #363636;
+    --quaternary-background-color: #424242;
+    --hover-background-color-dark-0-2: rgba(255, 255, 255, 0.2);
+    --button-outline: #484848;
+    --window-button-outline: #484848;
+    --text-color-1: #ffffff;
+    --text-color-2: #e0e0e0;
+    --text-color-3: #dcdcdc;
+    --text-color-4: #bdbdbd;
+    --text-color-5: #9e9e9e;
+    --text-color-blue: #78b4f8;
+}
+
+/* Info pane header hover */
+.a-Mg-V:hover > .a-Mg-V-T {
+    color: var(--text-color-blue);
+}
+
+/* Info Pane Header */
+.a-nEbBXb .a-ub-Gd {
+    background-color: var(--primary-background-color);
+}
+
+/* unselected tab  */
+.a-nEbBXb .a-ub-ra-B > .h-ra-B > .h-ra {
+    color: var(--text-color-4);    
+}
+
+
+.a-nEbBXb .a-Mg-V-T {
+    color: #fff;
+}
+
+.a-nEbBXb .a-ub-oa {
+    background-color: var(--primary-background-color);
+}
+
+.y-C, .a-nEbBXb .y-E-gh-D .y-C-Ed-V {
+    background-color: var(--primary-background-color);
+}
+
+/* document and file text colors*/
+.a-nEbBXb .y-C-q-j, .a-nEbBXb .y-C-ka-T.y-C-xj-ka:hover {
+    color: var(--text-color-4)    
+}
+
+.y-C-ka:hover {
+    background-color: var(--primary-background-color);
+}
+
+/* discription heading ie You created 6 items  ... also used for dates next to icon*/
+.a-nEbBXb .y-C-q-D, .a-nEbBXb .y-C-Ya, .a-nEbBXb .y-C-Ed-V {
+    color: var(--text-color-4)
+}
+
+/* document editor name */
+.a-nEbBXb .y-C-H-Sb {
+    color: var(--text-color-2);
+}
+
+/* borderz */
+.a-Ra-Qc .y-C-Ed-V, .a-Ra-Qc .a-ub-Gd, .a-nEbBXb .a-ub-ra-B > .h-ra-B {
+    border-color: var(--secondary-background-color)
+}
+
+
+
+
+
+
 }
