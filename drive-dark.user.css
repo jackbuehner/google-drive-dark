@@ -1,8 +1,7 @@
 /* ==UserStyle==
 @name         Google Drive Dark 2018
 @description  This style adds a dark theme to the Google Drive webpage. It also makes slight modifications to the appearance of certain elements, including restoring the blue new button and adding mouse over effects for items. THIS STYLE REQUIRES THE NEW GOOGLE DRIVE
-@namespace    eight04.blogspot
-@version      0.1.8
+@version      0.1.9
 @author       Jack Buehner & Nathan Eads
 @homepageURL  https://github.com/jackbuehner/google-drive-dark
 @updateURL    https://raw.githubusercontent.com/jackbuehner/google-drive-dark/master/drive-dark.user.css
@@ -95,12 +94,12 @@
 }
 /*----------titlebar----------*/
 /*background and text*/
-.gb_ce {
+.gb_Ce {
     background: var(--transparent);
     color: var(--textLight);
 }
 /*icons*/
-.gb_Ta svg, .gb_lc svg {
+.gb_Wa svg, .gb_lc svg {
     color: var(--textLight);
 }
 /*border after*/
@@ -169,7 +168,6 @@
     background-color: #649efe !important;
     background-image: none;
     color: #fff !important;
-
 }
 /*bottom bar*/
 .gb_Hb {
@@ -181,27 +179,26 @@
 }
 /*-------------------*/
 /*searchbar*/
-.gb_Qe {
+#aso_search_form_anchor {
     background: var(--firstTransparencyLevel);
 }
-.gb_9e::placeholder {
+#aso_search_form_anchor::placeholder {
     opacity: 1;
     color: var(--textLight-2);
 }
-.gb_Qe:hover {
+#aso_search_form_anchor:hover {
     background: var(--secondTransparencyLevel);
 }
-.gb_Qe {
+#aso_search_form_anchor {
     border-radius: var(--borderRadius);
 }
 /*----------top navbar----------*/
 /*nav dropdown*/
-.Hb-ja-Na .a-l-S-Pc-w-d.h-R-w-d-Pb, .a-dk13Ye .a-l-S-Pc-w-d.h-R-w-d-W {
-    background-color: var(--backgroundSolidLight);
+.a-dkl3Ye .a-l-S-Pc-w-d.h-R-w-d-W {
+    background-color: var(--backgroundSolid-2);
 }
-/*sharring icon*/
-.H-qa-H-d {
-    background-color: var(--backgroundSolidLight);
+.a-dkl3Ye .a-l-S-Pc-w-d.h-R-w-d-pb {
+    background-color: var(--backgroundSolid-3);
 }
 .H-qa-H-d-c svg {
     filter: invert(100%);
@@ -213,23 +210,24 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 /*selected item background*/
-.a-nEbBXb .a-t-J-ha {
+.s55KNe:not(.KBj6Qd) .GZwC2b .jGNTYb, .aabwZd:not(.KBj6Qd) .GZwC2b {
     background-color: var(--secondTransparencyLevel);
+    color: var(--textLight-2);
 }
 /*hovered item background*/
-.a-nEbBXb .a-t-J:hover {
+.O5x1db:hover {
     background-color: var(--firstTransparencyLevel);
 }
 /*item details color*/
-.a-nEbBXb .a-t-J {
+.aabwZd .WYuW0e, .aabwZd:not(.KBj6Qd) .GZwC2b .M3pype .YUNZ4c {
     color: var(--textLight-2);
 }
 /*remove list border*/
-.a-nEbBXb .a-t-cb {
+.aabwZd .WYuW0e {
     border: 1px transparent;
 }
 /*item name color*/
-.a-nEbBXb .l-t-T-V > .l-Ab-T-r, .a-nEbBXb .a-t-J-ha .l-t-T-V > .l-Ab-T-r {
+.aabwZd .WYuW0e .M3pype[data-column-field="6"], .aabwZd:not(.KBj6Qd) .GZwC2b .M3pype[data-column-field="6"] {
     color: var(--textLight);
 }
 /*drag color*/
@@ -237,6 +235,10 @@
     background: none;
     border-bottom: none;
     border-top: none;
+}
+/*column header*/
+.a-Ra-Qc .aabwZd .N7iPof {
+    filter: invert(93%);
 }
 /*--------------------*/
 /*----------context menus----------*/
@@ -256,17 +258,17 @@
 /*--------------------*/
 /*----------file cards----------*/
 /*card background*/
-.a-dkl3Ye .l-u-xb.l-u-o, .a-dkl3Ye .l-u-xb.l-u-Ab {
+.a-dkl3Ye .s55KNe .jGNTYb, .s55KNe .jGNTYb {
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: var(--borderRadius);
 }
-.a-u-xb-j {
+.bSmy5 {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: var(--borderRadius);
 }
 /*card background hover*/
-.a-dkl3Ye .l-u-xb.l-u-o:hover, .a-dkl3Ye .l-u-xb.l-u-Ab:hover {
+.a-dkl3Ye .s55KNe .jGNTYb:hover, .s55KNe .jGNTYb:hover {
     background-color: var(--firstTransparencyLevel);
     border-color: transparent;
 }
@@ -276,7 +278,7 @@
     border-color: transparent !important;
 }
 /*card text color*/
-.a-nEbBXb .l-u-V {
+.WYuW0e {
     color: var(--textLight);
 }
 /*card text color selected*/
@@ -301,11 +303,18 @@
     background-color: rgba(0, 0, 0, 0.8);
     border-color: rgba(0, 0, 0, 0.8) !important;
 }
+.L202Xe:hover {
+    background-color: rgba(40, 40, 40, 0.8);
+    border-color: rgba(40, 40, 40, 0.8) !important;
+}
+.a-dkl3Ye .Ccie2c:focus .a-HZnjzd-xb-dc {
+    background-color: rgba(80, 80, 80, 0.8);
+}
 /*card text*/
-.a-HZnjzd-xb-V {
+.a-HZnjzd-xb-V, .a-dkl3Ye .Ccie2c:focus .a-HZnjzd-xb-V {
     color: var(--textLight);
 }
-.a-HZnjzd-xb-Np {
+.a-HZnjzd-xb-Np, .a-dkl3Ye .Ccie2c:focus .a-HZnjzd-xb-Np {
     color: var(--textLight-2);
 }
 .a-dkl3Ye .L202Xe {
@@ -396,13 +405,14 @@
 }
 
 /* borderz */
-.a-Ra-Qc .y-C-Ed-V, .a-Ra-Qc .a-ub-Gd, .a-nEbBXb .a-ub-ra-B > .h-ra-B {
+.a-Ra-Qc .y-C-Ed-V, .a-Ra-Qc .a-ub-Gd, .a-nEbBXb .a-ub-ra-B > .h-ra-B, .y-C {
     border-color: var(--secondary-background-color)
 }
 
-
-
-
+/*date heading*/
+.y-C-Ed-V {
+    background-color: var(--primary-background-color);
+}
 
 
 }
